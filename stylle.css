@@ -3,31 +3,91 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* ---------------- header section style ----------------*/
+            /* ---------------- header section style start ----------------*/
 
- header {
+header {
 	display: flex;
 	justify-content: space-around;
 }
-nav {
-    margin-top: 1%;
+.list-item {
+    margin-top: .5%;
 }
- nav ul {
+.list-item ul {
      display: flex;
  }
- nav ul li {
+.list-item ul li {
      list-style: none;
      margin-right: 20px;
  }
- nav li a {
+.list-item li a {
      text-decoration: none;
      color: black;
  }
- nav a:hover {
+.list-item a:hover {
     color: #eb1765;
 }
- .fas {
+ .fa-search, .fa-shopping-cart {
 	margin-right: 20px;
 	font-size: 20px;
 }
 
+            /* ---------------- header section style start ----------------*/
+
+.introduction-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.header-intro {
+	padding-left: 25%;
+	padding-top: 7%;
+}
+.header-intro>h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.header-intro>p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.header-image > img {
+	width: 66%;
+}
+.header-image {
+	padding-left: 20%;
+    padding-top: 4%;
+}
+button {
+	background: #E02C6D;
+	color: white;
+	padding: 10px 24px 10px 24px;
+	font-size: 16px;
+	border-radius: 40px;
+	cursor: pointer;
+	font-weight: 700;
+}
+hr {
+	width: 80%;
+	color: #e8dcdc;
+}
+
+            /* ---------------- collection-container section style start ----------------*/
+.collection-img {
+    height: 256px;
+    width: 300px;
+}
+.collection-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: space-evenly;
+	justify-items: center;
+	align-content: space-evenly;
+	align-items: center;
+	width: 1050px;
+	position: relative;
+    left: 17%;
+    grid-gap: 20px;
+}
+.collections {
+    border: 1px solid;
+}
